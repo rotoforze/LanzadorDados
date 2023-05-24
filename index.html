@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanzador de dado</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="container">
+        <div id="title">
+            <img src="ajustes.png" alt="ajustes" onclick="ajustes()">
+            <div id="ajustes" hidden="true">
+                <button onclick="showLast()">Últimos resultados</button>
+            </div>
+            <h1>Lanzador de dados</h1>
+            <a id="link" target=”_blank” href="https://www.twitter.com/rotoforze">By rotoforze</a>
+        </div>
+        <div id="selector">
+            <p>Número de caras</p>
+            <input type="number" id="caras" min="1"/>
+            <button onclick="launch()">LANZAR DADO</button>
+        </div>
+        <div id="result">
+            <p>Resultado: </p><p id="resultado">0</p>
+            <div id="lastNum">
+                <p>Últimos resultados: </p><p id="lastresultado">0,0,0,0,0</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

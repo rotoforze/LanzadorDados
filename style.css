@@ -2,7 +2,8 @@
     margin:0;
     padding: 0;
     color:black;
-    font-size: 'Times New Roman', Times, serif;
+    overflow: auto;
+    font-family: 'Times New Roman', Times, serif;
 }
 #container{
     display:flex;
@@ -19,6 +20,7 @@
     display: grid;
     justify-content: center;
     margin-bottom: 5%;
+    size-adjust:inherit;
 }
 #ajustes button{
     position: absolute;
@@ -43,16 +45,40 @@
 #selector{
     display: grid;
     justify-content: center;
-    font-size: 150%;
+    font-size: 5.3vh;
     margin-bottom: 5%;
+    text-align: center;
+    size-adjust:inherit;
+}
+@media only screen and (max-width: 740px) {
+    #container { 
+       width: 80%;
+    }
+    #selector, #result p{
+        font-size: 3.5vh; 
+    }
+ }
+@media only screen and (max-width: 740px) {
+    #title h1{
+        font-size: 3.5vh;
+    }
+}
+@media only screen and (max-width: 740px) {
+    #title button{
+        margin-top: 8%;
+        font-size:1.5vh;
+        height: 8%;
+        width: 20%;
+    }
 }
 /**/
 #result{
     display: grid;
     justify-content: center;
-    font-size: 150%;
+    font-size: 5.3vh;
     margin-bottom: 5%;
     text-align: center;
+    size-adjust:inherit;
 }
 #resultado{
     background-color: #82bd8f;
